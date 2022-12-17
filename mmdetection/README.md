@@ -6,7 +6,8 @@
 | OS | |
 | GPU||
 
-pythonのバージョン
+- pythonのバージョン
+- 3.9
 
 ## anacondaを利用した整備方法
 
