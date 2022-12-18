@@ -19,3 +19,15 @@ sh anaconda/create_env_cu111.sh
 ```
 docker build -t mmdetection docker/
 ```
+
+## docker imageの起動方法
+```
+docker run --rm --gpus all -it mmdetection
+```
+
+- 別のディレクトリをマウントしたい場合
+
+- `/mmdetection/myconfig`にマウントされる
+```
+docker run --rm --gpus all -it -v your_host_path/:/mmdetection/myconfig mmdetection
+```
