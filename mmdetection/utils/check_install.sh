@@ -1,0 +1,2 @@
+mim download mmdet --config yolov3_mobilenetv2_320_300e_coco --dest .
+python demo/image_demo.py demo/demo.jpg yolov3_mobilenetv2_320_300e_coco.py yolov3_mobilenetv2_320_300e_coco_20210719_215349-d18dff72.pth --out-file result.jpg
