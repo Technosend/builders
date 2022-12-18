@@ -1,1 +1,1 @@
-docker run --rm --gpus=all --name yolov7 -it -v ~/yolo_ws/yolov7/:/yolov7 --shm-size=64g yolov7_techno
+docker run --rm --gpus=all --name yolov7 -it --shm-size=64g yolov7_techno

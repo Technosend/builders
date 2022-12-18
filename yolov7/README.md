@@ -1,6 +1,7 @@
 # yolov7の実行環境整備用
 
 - 整備したPCのスペック
+
 |ハード|スペック|
 | ---|---|
 | OS   | Ubuntu20.04 |
@@ -24,6 +25,11 @@ sh docker/build_docker.sh
 
 ## docker imageの起動方法
 ```
-docker run --rm --gpus=all --name yolov7 -it -v your_path/yolov7/:/yolov7 --shm-size=64g yolov7_techno
+docker run --rm --gpus=all --name yolov7 -it --shm-size=64g yolov7_techno
 ```
-- 起動前に、 `-v your_path`の部分を適切なパスに変更する必要あり
+
+### configureファイルをマウントしたい場合
+- `/yolov7/myconfig` フォルダに，コンフィグファイルがマウントされる．
+```
+docker run --rm --gpus=all --name yolov7 -it -v your_host_path/:/yolov7/myconfig --shm-size=64g yolov7_techno
+```

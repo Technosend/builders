@@ -5,9 +5,13 @@ FROM nvcr.io/nvidia/pytorch:21.08-py3
 RUN apt-get update -y
 RUN apt-get install -y zip htop screen libgl1-mesa-glx
 RUN apt-get install nano -y
+RUN apt-get install git
 
 # pip install required packages
 RUN pip install seaborn thop
+
+# git clone
+RUN git clone https://github.com/WongKinYiu/yolov7.git /yolov7
 
 # go to code folder
 WORKDIR /yolov7
