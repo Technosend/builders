@@ -12,10 +12,15 @@
 - 3.9
 
 ## anacondaを利用した整備方法
+
+- cuda11.1
 ```
-conda env create -f anaconda/yolov7_env.yml
-conda activate yolov7
-pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
+sh anaconda/create_yolov7_cu111.sh
+```
+
+- cudaを利用しない場合
+```
+conda env create -f anaconda/yolov7_wo_cuda_env.yml
 ```
 
 ## dockerを利用した整備方法
