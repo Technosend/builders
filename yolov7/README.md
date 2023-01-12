@@ -5,7 +5,8 @@
 |OS|GPU|cuda|cpu|
 |:---:|:---:|:---:|:---:|
 | Ubuntu20.04 | RTX3080Ti | 11.1 | ?? |
-| Ubuntu20.04 | RTX1050Ti | 11.1 |  |
+| Ubuntu20.04 | RTX1050Ti | 11.1 | Ryzen 7 5800h |
+| Ubuntu18.04 | RTX3090 | 11.1 | Intel i9-10850K |
 
 
 - 動作確認済みOS一覧
