@@ -30,7 +30,7 @@ sh anaconda/create_yolov7_cu111.sh
 
 - cudaを利用しない場合
 ```
-conda env create -f anaconda/yolov7_wo_cuda_env.yml
+conda env create -f anaconda/yolov7_wo_cuda.yml
 ```
 
 ## dockerを利用した整備方法
