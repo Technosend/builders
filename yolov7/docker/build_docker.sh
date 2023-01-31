@@ -1,0 +1,1 @@
+docker build docker/ -t yolov7_techno

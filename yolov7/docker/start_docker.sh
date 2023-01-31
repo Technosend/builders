@@ -1,0 +1,1 @@
+docker run --rm --gpus=all --name yolov7 -it --shm-size=64g yolov7_techno
